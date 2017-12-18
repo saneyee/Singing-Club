@@ -1,3 +1,14 @@
-<p>
-  edit works!
-</p>
+<h4>Edit Event</h4>
+
+<label>New Event Title:</label>
+<input [(ngModel)]="selectedEvent.title">
+<br>
+
+<label>New Event Location:</label>
+<input [(ngModel)]="selectedEvent.location">
+<br>
+
+<label>New Event Trainer:</label>
+<input [(ngModel)]="selectedEvent.trainer">
+
+<button (click)="beginUpdatingEvent(selectedEvent)">Update</button>

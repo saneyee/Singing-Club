@@ -21,4 +21,11 @@ export class EventService {
   getEventById(eventId: string){
     return this.database.object('/events/' + eventId);
   }
+
+  updateEvent(localUpdatedEvent){
+    var eventEntryInFirebase = this.getEventById(localUpdatedEvent.$key);
+    eventEntryInFirebase.update({title: localUpdatedEvent.title,
+                                location: localUpdatedEvent.location,
+                                trainer: localUpdatedEvent.trainer});
+  }
 }

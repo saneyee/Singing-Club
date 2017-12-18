@@ -1,15 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { EventService } from '../event.service';
 
 @Component({
   selector: 'app-edit',
   templateUrl: './edit.component.html',
-  styleUrls: ['./edit.component.css']
+  styleUrls: ['./edit.component.css'],
+  providers: [EventService]
 })
-export class EditComponent implements OnInit {
+export class EditComponent {
 
-  constructor() { }
+    @Input() selectedEvent;
 
-  ngOnInit() {
-  }
+    constructor(private eventService: EventService) { }
+
+    beginUpdatingEvent(eventToUpdate){
+      this.eventService.updateEvent(eventToUpdate);
+    }
 
 }
