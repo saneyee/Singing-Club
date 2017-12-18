@@ -1,10 +1,10 @@
 <h2>Events</h2>
 
-<div *ngFor="let event of events | async" (click)="goToDetailPage(event)" class="panel panel-default">
+<div *ngFor="let event of events | async"  class="panel panel-default">
     <div class="panel-body">
-        <h3><em>{{event.title}}</em> by {{event.trainer}}</h3>
+        <h3 (click)="goToDetailPage(event)"><em>{{event.title}}</em> by {{event.trainer}}</h3>
         <div *ngIf="currentRoute === '/admin'">
-            {{event.trainer}}
+            {{event.location}}
             <hr>
             <app-edit  [selectedEvent]="event"></app-edit>
         </div>
