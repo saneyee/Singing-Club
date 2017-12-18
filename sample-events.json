@@ -1,0 +1,17 @@
+{ "events": [{
+    "title": "Indian Classical Music",
+    "location": "Redmond",
+    "trainer": "Mahua Roy"
+
+    }, {
+    "title": "Rabindra Sangeet",
+    "location": "Bellevue",
+    "trainer": "Sudarshana"
+
+      }, {
+    "title": "Bengali Pop Songs",
+    "location": "Sammammish",
+    "trainer": "Mou Bhatta"
+
+  }]
+}
