@@ -1,3 +1,3 @@
 export class Event {
-    constructor (public title: string, public eventlocation: string, public trainer: string) { }
+    constructor (public title: string, public location: string, public trainer: string) { }
 }
