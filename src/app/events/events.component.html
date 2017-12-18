@@ -1,6 +1,6 @@
-<h2>Marketplace</h2>
+<h2>Events</h2>
 
-<div *ngFor="let event of events" (click)="goToDetailPage(event)" class="panel panel-default">
+<div *ngFor="let event of events | async" (click)="goToDetailPage(event)" class="panel panel-default">
   <div class="panel-body">
     <h3><em>{{event.title}}</em> by {{event.trainer}}</h3>
   </div>
