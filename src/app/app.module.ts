@@ -11,6 +11,7 @@ import { EventsComponent } from './events/events.component';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { EventDetailComponent } from './event-detail/event-detail.component';
 
 
 export const firebaseConfig = {
@@ -25,7 +26,8 @@ export const firebaseConfig = {
     AppComponent,
     WelcomeComponent,
     AboutComponent,
-    EventsComponent
+    EventsComponent,
+    EventDetailComponent
   ],
   imports: [
     BrowserModule,

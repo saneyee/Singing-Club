@@ -1,3 +1,7 @@
-<p>
-  events works!
-</p>
+<h2>Marketplace</h2>
+
+<div *ngFor="let event of events" (click)="goToDetailPage(event)" class="panel panel-default">
+  <div class="panel-body">
+    <h3><em>{{event.title}}</em> by {{event.trainer}}</h3>
+  </div>
+</div>
