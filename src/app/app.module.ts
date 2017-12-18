@@ -13,6 +13,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { EventDetailComponent } from './event-detail/event-detail.component';
 import { AdminComponent } from './admin/admin.component';
+import { EditComponent } from './edit/edit.component';
 
 
 export const firebaseConfig = {
@@ -29,7 +30,8 @@ export const firebaseConfig = {
     AboutComponent,
     EventsComponent,
     EventDetailComponent,
-    AdminComponent
+    AdminComponent,
+    EditComponent
   ],
   imports: [
     BrowserModule,
