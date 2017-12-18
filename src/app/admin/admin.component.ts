@@ -13,8 +13,8 @@ export class AdminComponent {
 
     constructor(private eventService: EventService) { }
 
-    submitForm(title: string, location: string, trainer: string) {
-      const newEvent: Event = new Event(title, location, trainer);
+    submitForm(title: string, eventlocation: string, trainer: string) {
+      const newEvent: Event = new Event(title, eventlocation, trainer);
       this.eventService.addEvent(newEvent);
     }
 

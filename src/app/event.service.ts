@@ -17,4 +17,8 @@ export class EventService {
     addEvent(newEvent: Event) {
     this.events.push(newEvent);
   }
+
+  getEventById(eventId: string){
+    return this.database.object('events/' + eventId);
+  }
 }
