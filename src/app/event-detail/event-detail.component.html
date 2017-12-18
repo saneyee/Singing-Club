@@ -1,5 +1,10 @@
-<div>
-  <h3>{{(eventToDisplay | async).title}}</h3>
-  <h4>{{(eventToDisplay | async).location}}</h4>
-  <h4>{{(eventToDisplay | async).trainer}}</h4>
+<br>
+<br>
+
+<div class="event panel panel-default">
+    <div class="panel-body">
+      <h3>Title : {{(eventToDisplay | async).title}}</h3>
+      <h3>Location : {{(eventToDisplay | async).location}}</h3>
+      <h3>Trainer : {{(eventToDisplay | async).trainer}}</h3>
+    </div>
 </div>

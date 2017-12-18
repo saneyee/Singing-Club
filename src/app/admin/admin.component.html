@@ -1,31 +1,27 @@
-<div class="panel panel-default">
-    <div class="panel-heading">
-        <h3 class="panel-title">Add New Event</h3>
-    </div>
+<div class="event panel panel-default">
     <div class="panel-body">
+        <h3>Add New Event</h3>
         <div>
-            <div>
-                <label>Event Title:</label>
-                <br>
-                <input #newTitle>
-            </div>
-
-            <div>
-                <label>Event Location:</label>
-                <br>
-                <input #newLocation>
-            </div>
-
-            <div>
-                <label>Event Trainer:</label>
-                <br>
-                <input #newTrainer>
-            </div>
-            <button (click)="submitForm(newTitle.value, newLocation.value, newTrainer.value); newTitle.value=''; newLocation.value=''; newTrainer.value=''">Add</button>
+            <label>Event Title:</label>
+            <br>
+            <input #newTitle>
         </div>
+        <div>
+            <label>Event Location:</label>
+            <br>
+            <input #newLocation>
+        </div>
+        <div>
+            <label>Event Trainer:</label>
+            <br>
+            <input #newTrainer>
+        </div>
+        <br>
+        <button (click)="submitForm(newTitle.value, newLocation.value, newTrainer.value); newTitle.value=''; newLocation.value=''; newTrainer.value=''">Add</button>
     </div>
 </div>
 
+
 <div>
-  <app-events></app-events>
+    <app-events></app-events>
 </div>

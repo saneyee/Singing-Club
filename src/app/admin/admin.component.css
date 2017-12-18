@@ -1,0 +1,7 @@
+.event.panel, button{
+    background-color: rgba(0,20,25,0.3);
+    color: white;
+}
+input {
+    color: black;
+}

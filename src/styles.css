@@ -1,8 +1,15 @@
-.footer {
+footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 20px;
-  background-color: #f5f5f5;
-  padding: 15px;
+  height: 30px;
+  background-color: purple;
+  color: white;
+  padding-top: 5px;
+  text-align: center;
+}
+
+body {
+    background-image: url("https://scontent.fsnc1-1.fna.fbcdn.net/v/t1.0-9/17952936_10155236003941952_6907535246625134733_n.jpg?oh=a34e353337069f7c65debc4636880d3e&oe=5ACA6D07");
+    background-position: top;
 }

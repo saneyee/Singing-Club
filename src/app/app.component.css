@@ -1,0 +1,19 @@
+nav {
+    background-color: purple;
+}
+
+a {
+    color: white !important;
+}
+a:link {
+    color:white !important;
+}
+a:visited {
+    color:white !important;
+}
+
+h1 {
+    color: white;
+    font-family: fantasy;
+    font-size: 60px;
+}
