@@ -10,5 +10,8 @@
 
 <label>New Event Trainer:</label>
 <input [(ngModel)]="selectedEvent.trainer">
+<br>
 
 <button (click)="beginUpdatingEvent(selectedEvent)">Update</button>
+
+<button (click)="beginDeletingEvent(selectedEvent)">Delete</button>

@@ -17,4 +17,10 @@ export class EditComponent {
       this.eventService.updateEvent(eventToUpdate);
     }
 
+    beginDeletingEvent(eventToDelete){
+    if(confirm("Are you sure you want to delete this event from the inventory?")){
+      this.eventService.deleteEvent(eventToDelete);
+    }
+  }
+
 }

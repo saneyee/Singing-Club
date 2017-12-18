@@ -28,4 +28,9 @@ export class EventService {
                                 location: localUpdatedEvent.location,
                                 trainer: localUpdatedEvent.trainer});
   }
+
+  deleteEvent(localEventToDelete){
+    var eventEntryInFirebase = this.getEventById(localEventToDelete.$key);
+    eventEntryInFirebase.remove();
+  }
 }
