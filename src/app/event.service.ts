@@ -9,7 +9,12 @@ export class EventService {
   constructor(private database: AngularFireDatabase) {
     this.events = database.list('events');
   }
+
   getEvents(){
       return this.events;
     }
+
+    addEvent(newEvent: Event) {
+    this.events.push(newEvent);
+  }
 }
